@@ -1,10 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { Cell } from "../types";
 import {FaCircle, FaTimes} from 'react-icons/fa'
-const CSS = styled.div`
-  
-`;
 
 interface Props {
   cell: Cell;
@@ -16,7 +12,7 @@ const BoardCell = ({ cell, onCellClick, onCellHover }: Props) => {
   const icon = cell.battleStatus === 'open' ? <FaCircle /> : <FaTimes />
   const color = cell.battleStatus === 'open' ? 'text-gray-800' : ['hit', 'sunk' ].includes(cell.battleStatus) ? 'text-red-900' : 'text-gray-300'
   return (
-    <CSS
+    <div
       onClick={(e) => {
         if (onCellClick) onCellClick(e, cell);
       }}
@@ -28,7 +24,7 @@ const BoardCell = ({ cell, onCellClick, onCellHover }: Props) => {
       }}
     >
       <div className={className}><span className={color}>{icon}</span></div>
-    </CSS>
+    </div>
   );
 };
 
