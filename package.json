@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,15 +11,28 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "@xstate/react": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
     "react-scripts": "4.0.0",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^1.6.0",
     "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "xstate": "^4.14.0",
+    "zustand": "^3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:tailwind": "postcss src/tailwind.css -o src/tailwind.generated.css",
+    "watch:tailwind": "postcss -w src/tailwind.css -o src/tailwind.generated.css",
+    "prestart": "yarn run build:tailwind",
+    "prebuild": "yarn run build:tailwind",
+    "start:react": "react-scripts start",
+    "build:react": "react-scripts build",
+    "start": "run-p watch:tailwind start:react",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.4"
   }
 }

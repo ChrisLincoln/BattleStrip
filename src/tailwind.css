@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cell {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+}
+
+.showships .ship {
+  background-color: gray;
+}
