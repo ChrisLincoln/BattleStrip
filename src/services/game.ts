@@ -1,4 +1,4 @@
-import { interpret, Machine, assign, send } from "xstate";
+import { interpret, Machine, assign } from "xstate";
 import {
   Cell,
   CellBattleStatus,

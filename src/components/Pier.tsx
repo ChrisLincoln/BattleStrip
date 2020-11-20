@@ -4,7 +4,6 @@ import { GameAction, gameService } from "../services/game";
 import { Game, Ship } from "../types";
 import create from "zustand";
 import Button from "./Button";
-import styled from "styled-components";
 import Strip from "./Strip";
 
 type DeployShipState = {
