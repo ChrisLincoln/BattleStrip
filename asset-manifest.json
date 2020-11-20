@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/battlestrip/static/css/main.890c4a38.chunk.css",
+    "main.js": "/battlestrip/static/js/main.a157591f.chunk.js",
+    "main.js.map": "/battlestrip/static/js/main.a157591f.chunk.js.map",
+    "runtime-main.js": "/battlestrip/static/js/runtime-main.ef2525e4.js",
+    "runtime-main.js.map": "/battlestrip/static/js/runtime-main.ef2525e4.js.map",
+    "static/js/2.607a60cb.chunk.js": "/battlestrip/static/js/2.607a60cb.chunk.js",
+    "static/js/2.607a60cb.chunk.js.map": "/battlestrip/static/js/2.607a60cb.chunk.js.map",
+    "static/js/3.aedb5774.chunk.js": "/battlestrip/static/js/3.aedb5774.chunk.js",
+    "static/js/3.aedb5774.chunk.js.map": "/battlestrip/static/js/3.aedb5774.chunk.js.map",
+    "index.html": "/battlestrip/index.html",
+    "static/css/main.890c4a38.chunk.css.map": "/battlestrip/static/css/main.890c4a38.chunk.css.map",
+    "static/js/2.607a60cb.chunk.js.LICENSE.txt": "/battlestrip/static/js/2.607a60cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef2525e4.js",
+    "static/js/2.607a60cb.chunk.js",
+    "static/css/main.890c4a38.chunk.css",
+    "static/js/main.a157591f.chunk.js"
+  ]
+}
