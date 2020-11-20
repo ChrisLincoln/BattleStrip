@@ -5,6 +5,7 @@
 This project was made for the react subreddit contest entry for 11/27/2020.  It is my digital riff
 on the old analog Battleship game.  
 
+[Live Demo](https://chrislincoln.github.io/battlestrip)
 ### Interesting libraries
 
 - [XState](https://xtate.js.org). Game turn management is handled with XState. In retrospect, because I used a flux-style reducer in the machine, I could have just used Zustand for the whole thing.  But turn-based games just scream for a lib that handles FSM on a first-name basis, and I've been looking for excuses to try XState.
