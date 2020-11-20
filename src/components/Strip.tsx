@@ -24,7 +24,7 @@ const Strip = ({ ship, orientation }: Props) => {
     );
   }
   return (
-    <div className="flex flex-row border-t border-b border-r bg-brown-400 " style={{width: 'max-content'}}>
+    <div className="flex flex-col md:flex-row border-t border-b border-r bg-brown-400 " style={{width: 'max-content'}}>
       {cells.map((cell) => (
         <BoardCell key={cell.index} cell={cell} />
       ))}

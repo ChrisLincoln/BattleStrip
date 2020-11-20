@@ -36,7 +36,7 @@ const Pier = () => {
     }
   }, [setCheating, value]);
   return (
-    <div className='w-1/12 flex flex-col px-2 py-4 justify-between bg-brown-700'>
+    <div className='w-3/12 md:w-1/12 flex flex-col px-2 py-4 justify-between bg-brown-700'>
       <div className='flex flex-col'>
         <Button
           disabled={["intro", "arenaSetup"].includes(value.toString())}

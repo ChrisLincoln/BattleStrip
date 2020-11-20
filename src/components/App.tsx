@@ -15,7 +15,7 @@ function App() {
     <Background>
       <div className='flex flex-row text-gray-300 h-full'>
         <Pier />
-        <div className='w-11/12 flex  justify-center'>
+        <div className='w-9/12 md:w-11/12 flex  justify-center'>
           <div className='flex flex-col  items-center'>
             <GamePhase />
             {state === "intro" && <IntroPage />}

@@ -14,8 +14,8 @@ const Button = ({
   return (
     <button
       {...rest}
-      className={`bg-blue-500 text-white active:bg-blue-600 font-bold 
-      uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md 
+      className={`bg-blue-500 text-white active:bg-blue-600 font-thin md:font-bold 
+      uppercase text-xs px-2 md:px-4 py-2 rounded shadow hover:shadow-md 
       outline-none focus:outline-none mr-1 mb-1  ${disabledClasses} ${className}`}
       type='button'
       style={{ transition: "all .15s ease" }}

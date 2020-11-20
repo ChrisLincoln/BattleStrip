@@ -12,7 +12,7 @@ const GamePhase = () => {
   const metaKey = `game.${value}`;
   const metaObject = meta[metaKey];
   return (
-    <h1 className="text-6xl">
+    <h1 className="text-2xl md:text-6xl">
       {value !== 'gameover' && metaObject.message}
       {value === 'gameover' && (context.winner === 'human' ? 'You Win!!!' : 'You lose')}
     </h1>

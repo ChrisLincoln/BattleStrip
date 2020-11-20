@@ -17,6 +17,7 @@ If you are looking for a portfolio/cv builder, here are some non-trivial things 
 to extend this project and call it your own. I budgeted 2 days for this, and left these on the 
 cutting room floor: 
 - Make it mobile friendly. I won't win the contest without this, but...whatever.
+- Add textual feedback..."You sank my 4-holer!!", or "HIT!" when a player takes a turn.
 - Make the BOT smarter. I'm just using Math.random() right now.
 - Add some smoothing to the transitions. It's a bit off-putting right now.
 - Allow multiple bots. The game is really close to supporting this now.

@@ -12,17 +12,15 @@ const BattleMode = () => {
 
   useEffect(() => {
     // todo:  Don't assume the bot will want to kill the human first
-    setTimeout(() => {
-      const humanBoard = context.boards["human"];
-      if (context.turn === "bot") {
-        send({
-          type: "FIRESALVO",
-          player: "bot",
-          enemy: "human",
-          cellIndex: randomShot(humanBoard),
-        });
-      }
-    }, 1000);
+    const humanBoard = context.boards["human"];
+    if (context.turn === "bot") {
+      send({
+        type: "FIRESALVO",
+        player: "bot",
+        enemy: "human",
+        cellIndex: randomShot(humanBoard),
+      });
+    }
   }, [context.boards, context.turn, send]);
   const handleHumanTurn = (enemy: Player) => (
     e: React.MouseEvent,

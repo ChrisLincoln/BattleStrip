@@ -39,7 +39,7 @@ const ChooseGame = () => {
     });
   };
   return (
-    <div className='flex'>
+    <div className='flex flex-col md:flex-row'>
       {boards.map((board) => (
         <div key={board.rows} className='mr-4'>
           <Gameboard
